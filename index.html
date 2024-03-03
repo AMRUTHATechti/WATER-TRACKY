@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATER TRACKY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WATER TRACKY</h1>
+    </header>
+
+    <section>
+        <div class="input-group">
+            <h2>Log Your Body Dimensions</h2>
+            Height (cm):
+            <input type="number" id="height" style="width: 20%;" placeholder="enter height in centimeters">
+            Weight (Kg):
+            <input type="number" id="weight" style="width: 20%;" placeholder="enter weight in kilogram">
+        </div>
+        <button onclick="logBodyDimensions()">Log Dimensions</button>
+        </div>
+       
+    </section>
+    <section id="water-log">
+        <div class="input-group">
+            <h2>Log Your Water Intake</h2>
+            Amount (ml):
+            <input type="number" id="amount" style="width: 20%;" placeholder="enter amount in milliliters">
+        </div>
+        <button onclick="logWater()">Log Water</button>
+    </section>
+    <section>
+        <h2>Set Reminder</h2>
+        <div class="input-group">
+            <label for="interval">interval (minutes):</label>
+            <input type="number" id="interval" placeholder="enter reminder in minutes">
+        </div> 
+        <button onclick="setReminder()">Set Reminder</button>
+    </section>
+    <section>
+        <h2>Statistics</h2>
+        <div class="summary">
+            <h3>Daily Summary</h3>
+            <p>Total Water Intake: <span id="daily-total">0 ml</span></p>
+            <p>Weather Condition: <span id="daily-weather">Sunny</span></p>
+        </div>
+        <div class="summary">
+            <h3>Weekly Summary</h3>
+            <p>Total Water Intake: <span id="Weekly-total">0 ml</span></p>
+            <p>Weather Condition: <span id="weekly-weather">sunny</span></p>
+        </div>
+        <div class="summary">
+            <h3>Monthly Summary</h3>
+            <p>Total Water Intake:<span id="monthly-total">0 ml</span></p>
+            <p>Weather Condition: <span id="monthly weather">sunny</span></p>
+        </div>
+    </section>
+</main>
+
+<script src="script.js">
+
+</script>
+</body> 
+</html>
